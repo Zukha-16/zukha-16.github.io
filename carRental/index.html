@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Car Rental</title>
+		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+			integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo_block">
+          <a href="#main__title">Car Rental</a>
+        </div>
+        <div class="navigation">
+          <nav>
+            <ul class="menu_touch">
+              <li><a href="#main__title">About</a></li>
+              <li><a href="./products.html">Products</a></li>
+              <li><a href="#form">Reservation</a></li>
+              <li><a href="#bottom" class="contacts">Contacts</a></li>
+              <li class="login">
+                <a href="./login.html" id="user">log in</a
+                ><img
+                  src="https://img.icons8.com/cotton/64/000000/gender-neutral-user--v1.png"
+                />
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <div class="content" id="main__title">
+      <div class="title">
+        <h2>your #1 car rental servise</h2>
+        <h1>car rental welcomes you</h1>
+      </div>
+    </div>
+
+    <div class="section__2">
+      <div class="suptitle">
+        <h2>what we offer</h2>
+        <h3>browse online</h3>
+      </div>
+      <div class="section__content">
+        <div class="img__1">
+          <img src="./media/img_1.jpg" alt="Rolls-Royse" />
+        </div>
+        <div class="text__1">
+          <h3>modern luxury car</h3>
+          <p>
+            Whether you want to arrive in style or just prefer to drive in
+            comfort, the renting of a luxury car is your best option. We have a
+            large fleet of prestigious and luxurious cars from sporty
+            Lamborghini’s and Ferrari’s to even more refined Bentley’s and
+            Maserati’s. Check our car Brands page to see what other brands we
+            have in our luxury rental car fleet.
+          </p>
+        </div>
+      </div>
+      <div class="section__content">
+        <div class="text__1">
+          <h3>Vintage</h3>
+          <p>
+            The term Vintage originally belonged to the lexicon of winemakers
+            and meant an exclusive wine that has been aged in ideal conditions
+            for more than one decade. But over time, the concept of "vintage"
+            has seeped into the automotive industry that means it's time to feel
+            the whole history of cars with our beautiful collection of those
+            cars
+          </p>
+        </div>
+        <div class="img__1">
+          <img src="./media/img_2.jpg" alt="Rolls-Royse" class="img_2" />
+        </div>
+      </div>
+    </div>
+
+    <div class="section__3">
+      <div class="service__title">
+        <p>We also provide</p>
+      </div>
+      <div class="services">
+        <div class="service__inner">
+          <img src="./media/service_1.png" alt="Concierge" /><a onclick="link()" href="#form">
+            concierge services
+          </a>
+        </div>
+        <div class="service__inner">
+          <img src="./media/service_2.jpg" alt="Cleaning" /><a onclick="link()" href="#form">
+            deep car cleaning
+          </a>
+        </div>
+        <div class="service__inner">
+          <img src="./media/service_3.jpg" alt="Fixing" /><a onclick="link()" href="#form">
+            repair services
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="section__4">
+      <p class="section4__title">what makes us unique</p>
+      <div class="section__content">
+        <div class="img__1">
+          <img src="./media/feature_1.jpg" alt="Rolls-Royse" />
+        </div>
+        <div class="text__1">
+          <h3>award-winning</h3>
+          <p>
+            We guarantee to provide the highest level of professionalism, and we
+            promise to follow up after every rental to ensure you are completely
+            happy. Not 100% satisfied with your item? We’ll do everything we can
+            to correct the problem. We’ll leave you a satisfied customer and are
+            confident you’ll come back for more. fleet.
+          </p>
+        </div>
+      </div>
+      <div class="section__content">
+        <div class="text__1">
+          <h3>24/7 Phone support</h3>
+          <p>
+            We firmly believe this is one of our strongest qualities when
+            compared against other rental shops. Our team members are more than
+            happy to answer any of your questions before, during, and after the
+            rental process. Not satisfied? We’ll be sure to do everything in our
+            power to get the job done right.
+          </p>
+        </div>
+        <div class="img__1">
+          <img src="./media/feature_2.jpg" alt="Rolls-Royse" class="img_2" />
+        </div>
+      </div>
+    </div>
+
+    <div class="video__content" controls>
+      <div class="mini_player">
+        <button class="player__btn" onclick="prev()" type="button"><</button>
+        <video id="video__src" class="video_box" onplay="new_1()" controls>
+          <source src="./video/1.mp4" type="video/mp4" />
+        </video>
+        <button class="player__btn" onclick="next()" type="button">></button>
+      </div>
+    </div>
+
+    <div class="reservation__section" id='form'>
+      <div class="res__title">
+        <p>Make a Reservation</p>
+      </div>
+      <form action="javascript:void(0)" class="form__style">
+        <select
+          name="services"
+          id="services"
+          class="service_type"
+          onchange="optionCheck()"
+        >
+          <option value="concierge">Concierge service</option>
+          <option value="car rental">Car Rental</option>
+          <option value="deep cleaning">Deep cleaning</option>
+          <option value="repairing">Repairing</option>
+        </select>
+
+        <select name="car" id="car_type">
+          <option value="lamnorghini">Lamborghini</option>
+          <option value="mercedes-benz">Mercedes-Benz</option>
+          <option value="bmw">BMW</option>
+          <option value="rolls-royse">Rolls-Royse</option>
+          <option value="maseratti">Maseratti</option>
+          <option value="audi">Audi</option>
+          <option value="ford">Ford</option>
+        </select>
+
+        <input required type="text" id="f_name" placeholder="First name:" />
+        <input required type="text" id="l_name" placeholder="Last Name:" />
+        <input
+          required
+          type="number"
+          id="p_number"
+          placeholder="Phone number:"
+        />
+        <input required type="email" id="e_mail" placeholder="E-mail:" />
+
+        <textarea
+          name="comments"
+          id="comments"
+          placeholder="Please leave a comment If you have any personal requests..."
+        ></textarea>
+        <div class="form__btns">
+          <button type="submit" onclick="formCheck1()">Submit</button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
+    </div>
+
+    <div id="googleMap"></div>
+		
+
+		<footer class="last__part" id="bottom">
+			<div class="contact__part">
+				<p class="title_contact">Contacts</p>
+				<div class="information">
+					<p>LOCATION: United Kingdom, London</p>
+					<p>PHONE NUMBER: +44 xxx xxx xxxx </p>
+					<p>E-MAIL: 123new_mail@example.com</p>
+				</div>	
+			</div>
+			<div class="contact__part">
+				<p class="follow">Follow us on</p>
+				<div class="icons">
+					<i class="fab fa-instagram"></i>
+					<i class="fab fa-whatsapp"></i>
+					<i class="fab fa-facebook"></i>
+					<i class="fab fa-twitter"></i>
+					<i class="fab fa-telegram"></i>
+				</div>
+			</div>
+		</footer>
+		<p class="creater">©2020 by Car Rental. Proudly created by Zukhriddin Mekhrullaev.</p>
+
+		<script src="./js/script.js"></script>
+		<script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMa0cjF37AnQjIZmRYeevI3ppOTclevbk&callback=initMap">
+		</script>
+  </body>
+</html>

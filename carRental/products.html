@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Car Rental</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo_block">
+          <a href="./index.html">Car Rental</a>
+        </div>
+        <div class="navigation">
+          <nav>
+            <ul class="menu_touch">
+              <li><a href="./index.html">About</a></li>
+              <li><a href="./products.html">Products</a></li>
+              <li><a href="#form">Reservation</a></li>
+              <li><a href="#bottom" class="contacts">Contacts</a></li>
+              <li class="login">
+                <a href="./login.html" id="user">log in</a
+                ><img
+                  src="https://img.icons8.com/cotton/64/000000/gender-neutral-user--v1.png"
+                />
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <div class="cars__content">
+      <div class="cars__inner">
+        <div class="car__img">
+					<div class="slide_show">
+					<button class="slide__show" onclick="slider()" id="slide_button">slide show</button>
+					<div class="next_prev" id="slider_block" style="display: none;">
+						<button class="cars_slider_btn" onclick="prev_img()" type="button"><</button>
+							<img src="./media/21.jpg" alt="img" id="slide__img" >
+					<button class="cars_slider_btn" onclick="next_prev()" type="button">></button>
+					</div>
+					</div>
+          <div class="img__inner">
+						<div class="car_img">
+						<img src="./media/11.jpg" alt="" />
+						<p>dodge</p>
+						<p>200£ per day</p>
+          </div>
+          <div class="car_img">
+						<img src="./media/12.png" alt="" />
+						<p>ford-mustang</p>
+						<p>300£ per day</p>
+          </div>
+          <div class="car_img">
+						<img src="./media/13.jpg" alt="" />
+						<p>range-rover</p>
+						<p>250£ per day</p>
+          </div>
+				</div>
+				<div class="img__inner">
+        <div class="car_img">
+					<img src="./media/14.jpg" alt="" />
+					<p>jaguar c-type</p>
+					<p>400£ per day</p>
+        </div>
+        <div class="car_img">
+					<img src="./media/15.jpg" alt="" />
+					<p>ford-mustang</p>
+					<p>300£ per day</p>
+        </div>
+        <div class="car_img">
+					<img src="./media/16.jpg" alt="" />
+					<p>ferrari</p>
+					<p>500£ per day</p>
+				</div>
+				</div>
+				<div class="img__inner">
+        <div class="car_img">
+					<img src="./media/17.jpg" alt="" />
+					<p>mercedes-benz</p>
+					<p>350£ per day</p>
+        </div>
+        <div class="car_img">
+					<img src="./media/18.jpg" alt="" />
+					<p>pantiac</p>
+					<p>100£ per day</p>
+        </div>
+        <div class="car_img">
+					<img src="./media/19.jpg" alt="" />
+					<p>lamgorghini</p>
+					<p>500£ per day</p>
+				</div>
+			</div>
+      </div>
+		</div>
+		<script src="./js/script.js"></script>
+  </body>
+</html>

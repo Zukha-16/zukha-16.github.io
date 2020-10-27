@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Car Rental</title>
+	<link rel="stylesheet" href="./css/style.css" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+		integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+</head>
+<body>
+<div class="signUp">
+	<div class="signUp__inner">
+		<p class="">Log in</p>
+		<form action="./index.html" class="signUp__form">
+			<input type="text" placeholder="Enter your first name:" id="f_name" required>
+			<input type="text" onchange="link_dis()" placeholder="Enter your last name:" id="l_name" required>
+			
+			<div class="sub__title">
+				<a class="login__button" type="submit" href="./index.html" onclick="formCheck2()" id="sign_btn" style="pointer-events: none;">Log in</a>
+				<button class="login__button" type="reset">Reset</button>
+			</div>
+		</form>
+	</div>
+</div>
+<script src="./js/script.js"></script>
+</body>
+</html>
