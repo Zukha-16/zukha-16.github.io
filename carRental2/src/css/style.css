@@ -1,0 +1,349 @@
+/* Fonts */
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('../fonts/playFairDisplay/PlayfairDisplay-Medium.eot');
+  src: url('../fonts/pkayFairDisplay/PlayfairDisplay-Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/pkayFairDisplay/PlayfairDisplay-Medium.woff2') format('woff2'), url('../fonts/pkayFairDisplay/PlayfairDisplay-Medium.woff') format('woff'), url('../fonts/pkayFairDisplay/PlayfairDisplay-Medium.ttf') format('truetype'), url('../fonts/pkayFairDisplay/PlayfairDisplay-Medium.svg#PlayfairDisplay-Medium') format('svg');
+}
+@font-face {
+  font-family: 'Playfair Display_2';
+  src: url('../fonts/playFairDisplay/PlayfairDisplay-Italic_1.eot');
+  src: url('../fonts/playFairDisplay/PlayfairDisplay-Italic_1.eot?#iefix') format('embedded-opentype'), url('../fonts/playFairDisplay/PlayfairDisplay-Italic_1.woff2') format('woff2'), url('../fonts/playFairDisplay/PlayfairDisplay-Italic_1.woff') format('woff'), url('../fonts/playFairDisplay/PlayfairDisplay-Italic_1.ttf') format('truetype'), url('../fonts/playFairDisplay/PlayfairDisplay-Italic_1.svg#PlayfairDisplay-Italic') format('svg');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+/* Main colors */
+/* Basic settings */
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+button:focus,
+input:focus,
+a:focus {
+  outline: none;
+}
+.cars__section {
+  background-color: white;
+}
+/* Typography */
+.section {
+  background-color: black;
+  padding: 10rem 0;
+}
+/* Main */
+main {
+  z-index: 999;
+  position: fixed;
+}
+/* Link styles */
+.header {
+  padding: 2.5rem 0 1.5rem 0;
+  width: 100%;
+  background-color: #000000;
+  position: fixed;
+  top: 0;
+  font-family: 'Playfair Display';
+}
+.header__links {
+  color: #ffffff;
+  font-size: 2rem;
+  padding: 0 1.5rem;
+  text-transform: capitalize;
+  line-height: 5rem;
+  transition: .1s all linear;
+  text-decoration: none;
+  position: relative;
+  /* Hover effect */
+  /* Pseudo class after that helps to draw line animation */
+}
+.header__links:hover {
+  color: #e75b23;
+  text-decoration: none;
+}
+.header__links:after {
+  border-radius: 1rem;
+  border-top: 0.1rem solid #e75b23;
+  content: "";
+  position: absolute;
+  right: 100%;
+  bottom: 0;
+  left: 14%;
+  transition: right 0.5s cubic-bezier(0, 0.5, 0, 1), border-color 0.4s ease-out;
+}
+.header__links:hover:after {
+  right: 14%;
+}
+.header__log__in {
+  color: #ffffff;
+  font-size: 2rem;
+  padding: 0 1.5rem;
+  text-transform: capitalize;
+  line-height: 5rem;
+  transition: .1s all linear;
+  text-decoration: none;
+  position: relative;
+  /* Hover effect */
+  /* Pseudo class after that helps to draw line animation */
+}
+.header__log__in:hover {
+  color: #e75b23;
+  text-decoration: none;
+}
+.header__log__in:after {
+  border-radius: 1rem;
+  border-top: 0.1rem solid #e75b23;
+  content: "";
+  position: absolute;
+  right: 100%;
+  bottom: 0;
+  left: 14%;
+  transition: right 0.5s cubic-bezier(0, 0.5, 0, 1), border-color 0.4s ease-out;
+}
+.header__log__in:hover:after {
+  right: 14%;
+}
+.log__in__img {
+  height: 3.8rem;
+}
+.logo__text {
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 5rem;
+  text-decoration: none;
+  /* Hover effect */
+}
+.logo__text:hover {
+  text-decoration: none;
+  color: #ffffff;
+}
+#res_id {
+  /* Pseudo class after that helps to draw line animation */
+}
+#res_id::after {
+  left: 10%;
+}
+#res_id:hover::after {
+  right: 10%;
+}
+.inner__header {
+  height: 5rem;
+}
+/* Background image doe main page */
+.background__wall {
+  background: url("../img/back_1.jpg") no-repeat center center;
+  background-size: cover;
+  content: ' ';
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  will-change: transform;
+  z-index: -1;
+}
+/* Content of main page (Title and sup-title) */
+.main__content {
+  color: #000000;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sup__title {
+  font-family: 'Playfair Display';
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 2.5rem;
+}
+.main__title {
+  margin-top: -1.5rem;
+  font-family: 'Playfair Display_2';
+  font-weight: 600;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 6rem;
+}
+/* Hamburger menu button */
+#menu__toggle {
+  opacity: 0;
+}
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0;
+}
+.hamburger-menu {
+  width: 100%;
+}
+.menu__btn {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 50;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  transition-duration: .25s;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+.menu__box {
+  text-align: center;
+  position: fixed;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  background-color: rgba(17, 17, 17, 0.95);
+  transition-duration: .25s;
+}
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: .25s;
+  font-family: 'Playfair Display';
+}
+.menu__item:hover {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #000000;
+}
+.hamburger-menu {
+  display: none;
+}
+/* End of menu button */
+.section__2 {
+  margin-top: 100vh;
+  background-color: black;
+}
+.section__imgs {
+  margin-top: -2px;
+  width: 100%;
+}
+.left__car {
+  position: absolute;
+  left: 0;
+  width: 50%;
+}
+.left__car__article {
+  height: 100%;
+  margin: auto 0;
+  color: #ffffff;
+  font-size: 2rem;
+  font-family: 'Playfair Display';
+  line-height: 2;
+  text-align: justify;
+  margin-top: 5%;
+}
+.left__car__article h1 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+.left__car__article p {
+  text-indent: 1.5em;
+}
+.inner__section {
+  background-color: #e75b23;
+}
+@media (max-width: 991px) {
+  .hamburger-menu {
+    display: block;
+  }
+}
+@media (max-width: 991px) {
+  .logo__text {
+    font-size: 2.5rem;
+  }
+  .logo {
+    text-align: center;
+  }
+  .log_in {
+    text-align: right;
+  }
+  .log__in__img {
+    margin-right: 4%;
+  }
+  .menu__nav {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .nav__links {
+    text-align: center;
+    -ms-flex-order: 12;
+    order: 12;
+  }
+  .log_in {
+    text-align: right;
+  }
+  .log__in__img {
+    margin-right: 0%;
+  }
+  .sup__title {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .main__title {
+    text-align: center;
+    font-size: 3rem;
+  }
+}
+@media (max-width: 575px) {
+  .small-screen {
+    display: block;
+  }
+  .nav__links {
+    -ms-flex-order: 12;
+    order: 12;
+  }
+  .sup__title {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .img__left {
+    display: block;
+    width: 100%;
+  }
+}
